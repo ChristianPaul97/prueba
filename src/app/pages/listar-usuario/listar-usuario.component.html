@@ -1,0 +1,28 @@
+<h1>{{title}}</h1>
+
+
+<table>
+
+    <tr>
+
+      
+        <th>Cedula</th>
+        <th>Nombre</th>
+        <th>FechaNacimiento</th>
+        <th>NumeroCarga</th>
+        
+    </tr>
+    <tr *ngFor="let p  of usuarios | async"> 
+        <td>{{p.cedula}}</td>
+        <td>{{p.Nombre}}</td>
+        <td>{{p.FechaNacimiento}}</td>
+        <td>{{p.NumeroCarga}}</td>
+        
+    </tr>
+
+
+</table>
+
+
+
+<!-- <button (click)="goNewProducts()">Nuevo producto</button> -->
